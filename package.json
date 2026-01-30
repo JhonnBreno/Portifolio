@@ -2,8 +2,8 @@
   "name": "web-portifolio",
   "version": "1.0.0",
   "scripts": {
-    "build": "tailwindcss -c tailwind.config.js -i ./assets/css/input.css -o ./assets/css/output.css --watch"
-  },
+  "build": "tailwindcss -c tailwind.config.js -i ./assets/css/input.css -o ./assets/css/output.css --minify"
+},
   "devDependencies": {
     "autoprefixer": "^10.4.23",
     "postcss": "^8.5.6",
