@@ -96,6 +96,21 @@ projetos.forEach(projeto => {
       nameProject.style.bottom = '-200px';
     }
   });
+
+  // cookies
+
+  const banner = document.getElementById("cookie-banner"); 
+  const closeBtn = document.getElementById("close-banner");
+ 
+  if(localStorage.getItem("CookieAccepted" === "true")){
+    banner.style.display = "none"
+  }
+
+  closeBtn.addEventListener('click', () =>{
+    localStorage.setItem("cookieAccepted", "true")
+    banner.style.display = "none"
+  })
+ 
   AOS.init();
 
 });

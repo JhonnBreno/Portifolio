@@ -14,17 +14,17 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=wb_sunny" />
-  <script defer src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 
 </head>
-<body class="font-poppins overflow-x-hidden bg-[var(--bg-primary)] dark:bg-[var(--bg-primary)]">
+<body class="font-poppins overflow-x-hidden bg-[var(--bg-primary)] dark:bg-[var(--bg-primary)] ">
   
-  <div id="cookie-banner" class="fixed bottom-5 inset-x-0 bg-slate-900 text-white flex items-center justify-around z-50 w-[90%] mx-auto p-3 font-[poppins] rounded-md">
+  <div id="cookie-banner" class="fixed bottom-5 bg-slate-900 text-white flex items-center justify-around inset-x-0 z-[99999999] w-[90%] mx-auto p-5 font-[poppins] rounded-md gap-5">
     <div class="cookie-text flex flex-col">
       <h1 class="font-bold text-lg">Usamos Cookies</h1>
       <p class="text-sm"> Este site utiliza cookies para melhorar sua experiência. Cookies são pequenos arquivos de texto armazenados no seu dispositivo para melhorar a experiência no site, lembrar preferências e coletar dados anônimos de uso.</p> 
     </div>
-    <button id="close-banner" class="ml-4 px-3 p-2 w-auto bg-cyan-500 text-slate-900 rounded-md text-sm font-semibold hover:bg-cyan-600 transition hover:text-white cursor-pointer"> Entendi </div>
+    <button id="close-banner" class="ml-4 px-3 p-2 w-50 bg-cyan-500 text-slate-900 rounded-md text-sm font-semibold hover:bg-cyan-600 transition hover:text-white cursor-pointer"> Entendi </div>
 
   <!-- Botão Dark Mode -->
   <button id="theme-toggle" class="fixed w-auto h-auto flex bg-[var(--bg-dark)] items-center justify-center top-4 right-4 z-[1000] rounded-full shadow-lg cursor-pointer p-5 transition-colors duration-300" aria-label="Alternar modo escuro">
@@ -41,7 +41,7 @@
 	  </div>
 	  
   <!-- Sidebar fixa à esquerda -->
-  <section data-aos="fade-right" class="md:fixed left-0 top-0 w-full md:w-1/3 md:h-screen p-5 flex flex-col items-center justify-center z-10 overflow-hidden">
+  <section data-aos="fade-right" class="md:fixed left-0 top-0 md:w-1/3 md:h-screen p-5 flex flex-col items-center justify-center z-[999] overflow-hidden">
     <img class="absolute fixa inset-0 shadow-md brightness-80 w-full h-full object-cover -z-10" src="./images/thumbs/bg.webp" loading="lazy" alt="background">
     <div class="brilho"></div>
     <div class="info flex flex-col text-center items-center gap-2 z-10">
@@ -50,18 +50,18 @@
     </div>
     <p class="text-gray-300 mt-4 text-center max-w-xs flex flex-col gap-4">
       "Criei este site para compartilhar minhas habilidades, experiências e a paixão por tecnologia."
-      <a class="hover:underline button hover:text-cyan-500 transition duration-200 bg-cyan-900 p-1 rounded-md w-40 mx-auto hover:bg-[rgba(255,255,255,0.3)] text-cyan hover:border-1 transition " href="./PDFs/CV 2026.pdf" download="jhonnbrenoCV">Currículo</a>
+      <a class="hover:underline button hover:text-white duration-200 bg-cyan-900 p-1 rounded-md w-40 mx-auto text-cyan hover:border-1 transition " href="./PDFs/CV 2026.pdf" download="jhonnbrenoCV">Currículo</a>
     </p>
   </section>
   
   <!-- Conteúdo principal à direita -->
-  <div class="md:ml-[33.333%] md:w-[66.666%] p-5 relative overflow-hidden">
+  <div class="md:ml-[33.333%] p-5 relative overflow-hidden flex flex-col items-center justify-center">
     <img class="corrente absolute inset-0 object-cover w-full h-full -z-10" src="./images/corrente.webp" loading="lazy" alt="corrente">
 
-    <section data-aos="fade-left" class="mt-5 bg-[var(--bg-card)]  rounded flex text-[var(--text-gray-700)] flex-col gap-5 p-5 relative z-10 font-[poppins]">
+    <section data-aos="fade-left" class="mt-5 bg-[var(--bg-card)]  rounded flex text-[var(--text-gray-700)] flex-col gap-5 p-5 relative z-10 font-[sans-serif]">
       <h2 class="text-xl font-bold ">Olá! meu nome é <span class="text-cyan-600">Jhonn Breno</span></h2>
-      <p class="indent-7">Uma pessoa determinada, comprometida e movida por objetivos claros.</p>
-      <p class="mt-1 text-sm font-light">Creio firmemente que a perseverança ininterrupta é a força motriz capaz de transmutar aspirações em conquistas concretas; por essa razão, abraço cada desafio com rigor, disciplina e uma determinação inflexível. No âmbito profissional, atribuo elevado apreço à pontualidade e à responsabilidade — virtudes que me permitem cultivar uma rotina sólida e irrepreensível, da qual me orgulho por jamais ter sido maculada pela ausência.
+      <p class="indent-7 flex text-wrap">Uma pessoa determinada, comprometida e movida por objetivos claros.</p>
+      <p class="mt-1 ">Creio firmemente que a perseverança ininterrupta é a força motriz capaz de transmutar aspirações em conquistas concretas; por essa razão, abraço cada desafio com rigor, disciplina e uma determinação inflexível. No âmbito profissional, atribuo elevado apreço à pontualidade e à responsabilidade — virtudes que me permitem cultivar uma rotina sólida e irrepreensível, da qual me orgulho por jamais ter sido maculada pela ausência.
 
         Minha paixão reside no ato de aprender incessantemente, de aprimorar-me e de contribuir para iniciativas que transcendem o trivial, deixando marcas significativas. Quer em colaboração coletiva, quer em atuação autônoma, empenho-me em oferecer o ápice de meu desempenho, com minuciosa atenção aos detalhes e reverência aos prazos estabelecidos.
         
@@ -70,17 +70,17 @@
     
     <hr class="my-6 border-gray-300 my-5">
 
-    <h1 data-aos="fade-left" class="text-2xl font-black m-2 p-2 relative w-auto h-full items-center text-[var(--text-gray-800)] flex-wrap">Pequenos Projetos Web <span class="text-red-500">(Em Manutenção)</span></h1>
-    <main class="projetos grid md:grid-cols-3 gap-5">
-      <div data-url="https://th.bing.com/th/id/OIP.Z71igwbxn0X6xsu2ce4TlAHaFL?w=252&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" data-aos="fade-up" class="shadow project w-full h-full overflow-hidden rounded-lg relative">
-        <img class="img-work cursor-pointer hover:blur-[1px] w-full h-full object-cover hover:scale-[1.1] transition" src="./images/thumbs/site1.webp" loading="lazy" alt="site1">
+    <h1 data-aos="fade-left" class="text-2xl font-black m-2 p-2 relative w-auto h-full items-center text-[var(--text-gray-800)]">Pequenos Projetos Web <span class="text-red-500">(Em Manutenção)</span></h1>
+    <main class="projetos md:grid-cols-3 flex gap-5 flex-col md:flex-row ">
+      <div data-url="https://th.bing.com/th/id/OIP.Z71igwbxn0X6xsu2ce4TlAHaFL?w=252&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" data-aos="fade-up" class="shadow project w-full h-100 md:h-full overflow-hidden rounded-lg relative">
+        <img width="600px" height="400px" class="img-work cursor-pointer hover:blur-[1px] w-full h-full object-cover hover:scale-[1.1] transition" src="./images/thumbs/site1.webp" loading="lazy" alt="site1">
         <h1 class="name-work absolute bottom-2 left-2 text-white font-bold">Portifólio</h1>
       </div>
-      <div data-url="https://th.bing.com/th/id/OIP.Z71igwbxn0X6xsu2ce4TlAHaFL?w=252&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" data-aos="fade-up" class="shadow project w-full h-full  overflow-hidden rounded-lg relative">
+      <div data-url="https://th.bing.com/th/id/OIP.Z71igwbxn0X6xsu2ce4TlAHaFL?w=252&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" data-aos="fade-up" class="shadow project w-full  h-100 md:h-full overflow-hidden rounded-lg relative">
         <img class="cursor-pointer hover:opacity-100 hover:blur-[1px] w-full h-full object-cover hover:scale-[1.1] transition" src="./images/thumbs/site2.webp" loading="lazy" alt="site2">
         <h1 class="name-work absolute bottom-2 left-2 text-white font-bold">Site de instituição religiosa</h1>
       </div>
-      <div data-url="https://th.bing.com/th/id/OIP.Z71igwbxn0X6xsu2ce4TlAHaFL?w=252&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" data-aos="fade-up"  class="shadow project w-full h-full  overflow-hidden rounded-lg relative">
+      <div data-url="https://th.bing.com/th/id/OIP.Z71igwbxn0X6xsu2ce4TlAHaFL?w=252&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" data-aos="fade-up"  class="shadow project w-full  h-100 md:h-full  overflow-hidden rounded-lg relative">
         <img class="cursor-pointer hover:blur-[1px]  w-full h-full object-cover hover:scale-[1.1] transition" src="./images/thumbs/site3.webp" loading="lazy" alt="site3">
         <h1 class="name-work absolute bottom-2 left-2 text-white font-bold">Agendamentos</h1>
       </div>
@@ -91,7 +91,7 @@
   <h1 data-aos="zoom-in-up" class="text-[var(--bg-cyan)] text-2xl " style ="font-family: poppins, sans-serif;">Conhecimentos Pacote Office</h1>
 
     <!-- Container geral -->
-<div class="cursos flex gap-6 flex-wrap items-center justify-center font-poppins">
+<div class="cursos flex gap-6 flex-wrap items-center justify-center font-poppins mb-10">
 
   <!-- Card Word -->
 <div data-aos="zoom-in-up" class="certificado p-6 shadow rounded min-w-[15rem] bg-[var(--bg-primary)]">
@@ -126,7 +126,7 @@
     </div>
   </section>
 
-  <section class="mx-auto p-5 relative md:ml-[33.333%] w-auto h-full items-center justify-center bg-[var(--bg-cyan)]">
+  <section class="p-5 relative md:ml-[33.333%] w-auto h-full items-center justify-center bg-[var(--bg-cyan)]">
     <img data-aos="slide-up" class="absolute efeito h-full w-full left-0 top-0 border-t-2 border-[var(--bg-cyan)] text-gray-200 inset-0" src="./images/paper-bg.webp" loading="lazy" alt="">
     <h1 data-aos="fade-right" class="text-4xl font-extrabold text-[var(--text-gray-800)] mb-4">
       In my <span class ="text-[var(--bg-cyan)]">Mind</span>
@@ -205,7 +205,7 @@
     </div>
   </div>
 
-  <div class="mapa w-full h-80"><iframe title="maps" class="w-full h-full" src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d626.1509205597043!2d-36.476513707036844!3d-8.910112198495304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!3e6!4m3!3m2!1d-8.9101191!2d-36.4758324!4m3!3m2!1d-8.9101122!2d-36.475863!5e1!3m2!1spt-BR!2sbr!4v1769110370229!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="allow" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+  <div class="mapa md:ml-[33.333%] w-full h-80"><iframe title="maps" class="w-full h-full" src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d626.1509205597043!2d-36.476513707036844!3d-8.910112198495304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!3e6!4m3!3m2!1d-8.9101191!2d-36.4758324!4m3!3m2!1d-8.9101122!2d-36.475863!5e1!3m2!1spt-BR!2sbr!4v1769110370229!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="allow" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
 
   <footer class="bg-[var(--bg-primary)] text-gray-300 p-5 w-auto h-auto md:ml-[33.333%] text-center">
 	<div class="flex flex-col md:flex-row md:justify-between w-auto items-center gap-4">
@@ -225,6 +225,6 @@
 	</div>
   </footer>
 
-  <script defer src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
