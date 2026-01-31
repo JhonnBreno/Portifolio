@@ -107,7 +107,8 @@ projetos.forEach(projeto => {
     banner.style.display = "none"
   })
  
-  AOS.init();
 
 });
+
+AOS.init();
 
